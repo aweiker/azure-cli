@@ -1,0 +1,3 @@
+#! /bin/sh
+
+docker run -it --hostname azure-cli --rm -v ${HOME}/.ssh:/home/az/.ssh -v ${HOME}/.gnupg:/home/az/.gnupg -v ${HOME}/.gitconfig:/home/az/.gitconfig -v ${HOME}/.azure:/home/az/.azure -v ${HOME}/src:/home/az/src aweiker/azure-cli:latest
